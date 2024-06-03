@@ -339,155 +339,127 @@
           </div>
         </div>                
       <div class="box">
-        <div class="img-box">
-          <img src="images/w4.png" alt="">
-        </div>
-        <div class="detail-box happy-customers">
-          <h2>We Value Your Satisfaction</h2>
-<p>At Finexo, we prioritize customer satisfaction above all else. Our dedicated team is committed to ensuring that your experience with us is nothing short of exceptional. From the moment you reach out to us to the completion of your transaction, we're here to address your needs, answer your questions, and provide the support you deserve. Your happiness is our ultimate goal, and we'll go above and beyond to exceed your expectations.</p>
-          <!-- Content Sections -->
-    <div class="container">
-      <div class="content">
-          <h2>FAQ</h2>
-          <!-- Section 1: Personal Finance Management -->
-          <details>
-              <summary><strong>What types of insurance should I consider?</strong></summary>
-              <p>There are several types of insurance you might consider, including health insurance, life insurance, auto insurance, home insurance, and travel insurance. Each type of insurance provides coverage for different aspects of your life and can help protect you financially in various situations.
-              </p>
-            </details>
-
-          <!-- Section 2: Insurance Essentials -->
-          <details>
-            <summary><strong>What are the different types of investment options??</strong></summary>
-            <p>There are many types of investment options, including stocks, bonds, mutual funds, ETFs (exchange-traded funds), real estate, and retirement accounts like 401(k)s and IRAs. Each type of investment carries different levels of risk and potential return.</p>
-          </details>
-
-          <!-- Section 3: Wealth Building Strategies -->
-          <details>
-            <summary><strong>How can I lower my car insurance premiums?</strong></summary>
-            <p>There are several ways to lower your car insurance premiums, such as maintaining a clean driving record, bundling multiple policies, increasing your deductible, and taking advantage of discounts offered by your insurance provider.</p>
-          </details>
-
-          <!-- Section 4: Financial Planning for Life Events -->
-          <details>
-            <summary><strong>What should I do if I suspect fraudulent activity on my account?</strong></summary>
-            <p>If you suspect fraudulent activity on your account, contact your bank or credit card issuer immediately. They will guide you through the steps to secure your account, dispute fraudulent transactions, and protect your financial information.</p>
-          </details>
-
-          <!-- Section 5: Money Management Tools and Resources -->
-          <details>
-              <summary><strong>What is compound interest, and why is it important?</strong></summary>
-              <p>Compound interest is the interest on a loan or deposit that is calculated based on both the initial principal and the accumulated interest from previous periods. It's important because it can significantly increase your savings or debt over time, making it a powerful tool in both investing and borrowing.</p>
-            </details>
-      </div>
-  </div>
-
-
-
-
-
-
-      
-          <h3>have more questions?</h3>
-          <form action="https://www.google.com/search" method="get" target="_blank">
-              <input type="text" name="q" placeholder="Search here...">
-              <button type="submit">Search</button>
-          </form>
-      </div>
-      
-      <script>
-          const questions = document.querySelectorAll('.question');
-          
-          questions.forEach((question) => {
-              question.addEventListener('click', (event) => {
-                  event.preventDefault(); // Prevent default anchor behavior
-                  const targetId = question.getAttribute('data-target');
-                  const answer = document.getElementById(targetId);
-                  answer.classList.toggle('faq-show-answer');
-              });
-          });
-      
-          document.querySelectorAll('.answer').forEach(answer => {
-              answer.style.display = 'none'; // Hide answers initially
-          });
-      
-          document.querySelectorAll('.faq-show-answer').forEach(answer => {
-              answer.style.display = 'block'; // Show answer when class is added
-          });
-      </script>
-      
-      <style>
-          .answer {
-              display: none;
-          }
-          .faq-show-answer {
-              display: block;
-          }
-      </style>      
-      <!-- Quiz Section -->
-<div class="container">
-  <div class="quiz-box" style="border: 2px solid #ccc; padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #f9f9f9, #e0e0e0); margin-top: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
-      <h2 style="text-align: center; font-weight: bold; color: #333;">Quiz Time!</h2>
-      <form id="quiz-form" style="margin-top: 20px;">
-          <div class="form-group" style="margin-bottom: 20px;">
-              <p style="font-weight: bold; color: #555;">Question 1: What is the recommended guideline for allocating emergency savings?</p>
-              <input type="radio" id="q1-a" name="q1" value="incorrect">
-              <label class="option-label" for="q1-a">A) Keep at least 10% of your annual income in savings.</label><br>
-              <input type="radio" id="q1-b" name="q1" value="correct">
-              <label class="option-label" for="q1-b">B) Save enough to cover three to six months' worth of living expenses.</label><br>
-              <input type="radio" id="q1-c" name="q1" value="incorrect">
-              <label class="option-label" for="q1-c">C) Emergency savings are unnecessary if you have insurance coverage.</label><br>
-              <input type="radio" id="q1-d" name="q1" value="incorrect">
-              <label class="option-label" for="q1-d">D) It's advisable to save only what you can afford to lose.</label>
-          </div>
-          <div class="form-group" style="margin-bottom: 20px;">
-              <p style="font-weight: bold; color: #555;">Question 2: Which of the following investment strategies aims to minimize tax liabilities while maximizing after-tax returns?</p>
-              <input type="radio" id="q2-a" name="q2" value="incorrect">
-              <label class="option-label" for="q2-a">A) Day trading</label><br>
-              <input type="radio" id="q2-b" name="q2" value="incorrect">
-              <label class="option-label" for="q2-b">B) Diversification</label><br>
-              <input type="radio" id="q2-c" name="q2" value="correct">
-              <label class="option-label" for="q2-c">C) Tax-Efficient Investing</label><br>
-              <input type="radio" id="q2-d" name="q2" value="incorrect">
-              <label class="option-label" for="q2-d">D) Speculative Investing</label>
-          </div>
-          <div class="form-group" style="margin-bottom: 20px;">
-              <p style="font-weight: bold; color: #555;">Question 3: What is an essential component of estate planning for preserving and transferring wealth to heirs?</p>
-              <input type="radio" id="q3-a" name="q3" value="incorrect">
-              <label class="option-label" for="q3-a">A) Paying off all debts before passing on assets</label><br>
-              <input type="radio" id="q3-b" name="q3" value="incorrect">
-              <label class="option-label" for="q3-b">B) Naming a pet as a beneficiary in the will</label><br>
-              <input type="radio" id="q3-c" name="q3" value="correct">
-              <label class="option-label" for="q3-c">C) Establishing a trust</label><br>
-              <input type="radio" id="q3-d" name="q3" value="incorrect">
-              <label class="option-label" for="q3-d">D) Avoiding estate planning altogether</label>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%; font-weight: bold; background-color: #007bff; border: none; border-radius: 5px; padding: 10px;">Submit</button>
-      </form>
-      <div class="score" style="display: none; margin-top: 20px; text-align: center; font-weight: bold; color: #333;"></div>
-      <p style="text-align: center; margin-top: 20px; font-style: italic; color: #777;">"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
-  </div>
+    <div class="img-box">
+        <img src="images/w4.png" alt="">
+    </div>
+    <div class="detail-box happy-customers">
+        <h2>We Value Your Satisfaction</h2>
+        <p>At Finexo, we prioritize customer satisfaction above all else. Our dedicated team is committed to ensuring that your experience with us is nothing short of exceptional. From the moment you reach out to us to the completion of your transaction, we're here to address your needs, answer your questions, and provide the support you deserve. Your happiness is our ultimate goal, and we'll go above and beyond to exceed your expectations.</p>
+    </div>
 </div>
 
-<!-- JavaScript for Quiz functionality -->
+<!-- Adding spacing between sections -->
+<div class="spacer" style="height: 30px;"></div>
+
+<!-- FAQ Section -->
+<div class="container">
+    <div class="content">
+        <h2>FAQ</h2>
+        <!-- Section 1: Personal Finance Management -->
+        <details>
+            <summary><strong>What types of insurance should I consider?</strong></summary>
+            <p>There are several types of insurance you might consider, including health insurance, life insurance, auto insurance, home insurance, and travel insurance. Each type of insurance provides coverage for different aspects of your life and can help protect you financially in various situations.</p>
+        </details>
+
+        <!-- Section 2: Insurance Essentials -->
+        <details>
+            <summary><strong>What are the different types of investment options?</strong></summary>
+            <p>There are many types of investment options, including stocks, bonds, mutual funds, ETFs (exchange-traded funds), real estate, and retirement accounts like 401(k)s and IRAs. Each type of investment carries different levels of risk and potential return.</p>
+        </details>
+
+        <!-- Section 3: Wealth Building Strategies -->
+        <details>
+            <summary><strong>How can I lower my car insurance premiums?</strong></summary>
+            <p>There are several ways to lower your car insurance premiums, such as maintaining a clean driving record, bundling multiple policies, increasing your deductible, and taking advantage of discounts offered by your insurance provider.</p>
+        </details>
+
+        <!-- Section 4: Financial Planning for Life Events -->
+        <details>
+            <summary><strong>What should I do if I suspect fraudulent activity on my account?</strong></summary>
+            <p>If you suspect fraudulent activity on your account, contact your bank or credit card issuer immediately. They will guide you through the steps to secure your account, dispute fraudulent transactions, and protect your financial information.</p>
+        </details>
+
+        <!-- Section 5: Money Management Tools and Resources -->
+        <details>
+            <summary><strong>What is compound interest, and why is it important?</strong></summary>
+            <p>Compound interest is the interest on a loan or deposit that is calculated based on both the initial principal and the accumulated interest from previous periods. It's important because it can significantly increase your savings or debt over time, making it a powerful tool in both investing and borrowing.</p>
+        </details>
+    </div>
+</div>
+
+<!-- Adding spacing between sections -->
+<div class="spacer" style="height: 30px;"></div>
+
+<h3>Have more questions?</h3>
+<form action="https://www.google.com/search" method="get" target="_blank">
+    <input type="text" name="q" placeholder="Search here...">
+    <button type="submit">Search</button>
+</form>
+
+<!-- Adding spacing between sections -->
+<div class="spacer" style="height: 30px;"></div>
+
+<!-- Quiz Section -->
+<div class="container">
+    <div class="quiz-box" style="border: 2px solid #ccc; padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #f9f9f9, #e0e0e0); margin-top: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; font-weight: bold; color: #333;">Quiz Time!</h2>
+        <form id="quiz-form" style="margin-top: 20px;">
+            <div class="form-group" style="margin-bottom: 20px;">
+                <p style="font-weight: bold; color: #555;">Question 1: What is the recommended guideline for allocating emergency savings?</p>
+                <input type="radio" id="q1-a" name="q1" value="incorrect">
+                <label class="option-label" for="q1-a">A) Keep at least 10% of your annual income in savings.</label><br>
+                <input type="radio" id="q1-b" name="q1" value="correct">
+                <label class="option-label" for="q1-b">B) Save enough to cover three to six months' worth of living expenses.</label><br>
+                <input type="radio" id="q1-c" name="q1" value="incorrect">
+                <label class="option-label" for="q1-c">C) Emergency savings are unnecessary if you have insurance coverage.</label><br>
+                <input type="radio" id="q1-d" name="q1" value="incorrect">
+                <label class="option-label" for="q1-d">D) It's advisable to save only what you can afford to lose.</label>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <p style="font-weight: bold; color: #555;">Question 2: Which of the following investment strategies aims to minimize tax liabilities while maximizing after-tax returns?</p>
+                <input type="radio" id="q2-a" name="q2" value="incorrect">
+                <label class="option-label" for="q2-a">A) Day trading</label><br>
+                <input type="radio" id="q2-b" name="q2" value="incorrect">
+                <label class="option-label" for="q2-b">B) Diversification</label><br>
+                <input type="radio" id="q2-c" name="q2" value="correct">
+                <label class="option-label" for="q2-c">C) Tax-Efficient Investing</label><br>
+                <input type="radio" id="q2-d" name="q2" value="incorrect">
+                <label class="option-label" for="q2-d">D) Speculative Investing</label>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <p style="font-weight: bold; color: #555;">Question 3: What is an essential component of estate planning for preserving and transferring wealth to heirs?</p>
+                <input type="radio" id="q3-a" name="q3" value="incorrect">
+                <label class="option-label" for="q3-a">A) Paying off all debts before passing on assets</label><br>
+                <input type="radio" id="q3-b" name="q3" value="incorrect">
+                <label class="option-label" for="q3-b">B) Naming a pet as a beneficiary in the will</label><br>
+                <input type="radio" id="q3-c" name="q3" value="correct">
+                <label class="option-label" for="q3-c">C) Establishing a trust</label><br>
+                <input type="radio" id="q3-d" name="q3" value="incorrect">
+                <label class="option-label" for="q3-d">D) Avoiding estate planning altogether</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-weight: bold; background-color: #007bff; border: none; border-radius: 5px; padding: 10px;">Submit</button>
+        </form>
+        <div class="score" style="display: none; margin-top: 20px; text-align: center; font-weight: bold; color: #333;"></div>
+        <p style="text-align: center; margin-top: 20px; font-style: italic; color: #777;">"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
+    </div>
+</div>
+
 <script>
-  document.getElementById('quiz-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const q1 = document.querySelector('input[name="q1"]:checked').value;
-      const q2 = document.querySelector('input[name="q2"]:checked').value;
-      const q3 = document.querySelector('input[name="q3"]:checked').value;
-      const score = [q1, q2, q3].filter(value => value === 'correct').length;
-      const scoreElement = document.querySelector('.score');
-      scoreElement.innerText = `Your score: ${score}/3`;
-      scoreElement.style.display = 'block';
-      if (score === 3) {
-          // Show celebration
-          alert('Congratulations! You scored 3/3! You\'re a financial wizard! 🎉');
-      } else {
-          // Show better luck next time
-          alert('Better luck next time! Keep learning and exploring the world of finance and insurance! 🍀');
-      }
-  });
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const q1 = document.querySelector('input[name="q1"]:checked').value;
+        const q2 = document.querySelector('input[name="q2"]:checked').value;
+        const q3 = document.querySelector('input[name="q3"]:checked').value;
+        const score = [q1, q2, q3].filter(value => value === 'correct').length;
+        const scoreElement = document.querySelector('.score');
+        scoreElement.innerText = `Your score: ${score}/3`;
+        scoreElement.style.display = 'block';
+        if (score === 3) {
+            alert('Congratulations! You scored 3/3! You\'re a financial wizard! 🎉');
+        } else {
+            alert('Better luck next time! Keep learning and exploring the world of finance and insurance! 🍀');
+        }
+    });
 </script>
 
   <!-- end why section -->
